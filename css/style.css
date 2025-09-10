@@ -9,11 +9,9 @@
     font-style: normal;
 }
 
-/*.main{
+.main{
     display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
+}
 
 /*--- Index ---*/
 .login{
@@ -30,7 +28,7 @@
 .form_login{
     width: 500px;
     height: 450px;
-    background: rgba(22, 22, 22, 0.3);;
+    background: rgba(22, 22, 22, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 5%;
     display: flex;
@@ -67,4 +65,99 @@
     color: #fff;
     font-size: 1.1em;
     cursor: pointer;
+}
+
+/*--- Reportes ---*/
+.menu{
+    position: fixed;
+    top: 25vh;
+    left: 0;
+    width: 200px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 0 9px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.rep_logo{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_logo {
+    width: 150px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.menu_logo img {
+    width: 80%;
+    height: 65%;
+    display: block;
+}
+
+.rep_logo h1 {
+    color: #0a0a0ad8;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+
+.list_op{
+    margin-top: 5px;
+}
+.op{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+.op h4 a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #1e1e1eb0;
+}
+
+.op h4 a:hover{
+    color: #0a0a0ad8;
+    transform: scale(1.05);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.exit h4 a{
+    margin-top: 40px;
+}
+
+.op.exit a {
+    transition: background 0.3s, color 0.3s;
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.op.exit a:hover {
+    color: #f11915;
+}
+
+.op.exit a .material-symbols-outlined {
+    transition: transform 0.3s, margin-right 0.3s;
+    margin-right: 0px;
+}
+.op.exit a:hover .material-symbols-outlined {
+    transform: translateX(-6px);
+    margin-right: 5px;
 }
