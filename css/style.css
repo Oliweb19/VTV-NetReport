@@ -11,6 +11,8 @@
 
 .main{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*--- Index ---*/
@@ -160,4 +162,42 @@
 .op.exit a:hover .material-symbols-outlined {
     transform: translateX(-6px);
     margin-right: 5px;
+}
+
+.cont-padre{
+    margin-left: 10%;
+    padding-top: 8%;
+    width: 75%;
+    min-height: 100vh;
+}
+.cont-padre h1{
+    margin-bottom: 10px;
+    color: #0a0a0ad8;
+}
+.banner-name{
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1e1e1eb0;
+}
+.cont-info{
+    margin-top: 30px;
+    padding: 0 20px;
+}
+.btn-pdf {
+    position: absolute;
+    right: 8%;
+    margin-top: 2%  ;
+    background: #ffeaea;
+    color: #e53935;
+    border: 2px solid #e53935;
+    border-radius: 24px;
+    padding: 12px 28px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.08);
+}
+.btn-pdf:hover {
+    background: #e53935;
+    color: #fff;
 }
