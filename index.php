@@ -12,11 +12,11 @@
 <body>
     <div class="main">
         <div class="login">
-            <form action="user/" class="form_login">
-                <h1>VTV NetReport</h1> 
-                <input type="text" placeholder="Usuario" class="input-login">
-                <input type="password" placeholder="Contraseña" class="input-login">
-                <input type="button" value="Iniciar Sesion" class="btn-login">
+            <form action="rederigir.php" method="POST" class="form_login">
+                <h1>VTV NetReport</h1>  
+                <input type="text" REQUIRED autofocus name="usuario" placeholder="Usuario" class="input-login">
+                <input type="password" REQUIRED name="clave" placeholder="Contraseña" class="input-login">
+                <input type="submit" value="Iniciar Sesion" class="btn-login">
             </form>
         </div>
     </div>
