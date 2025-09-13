@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $usuario = $_SESSION['admin'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +44,7 @@
                 </div>
                 <div class="op exit">
                     <h4>
-                        <a href="#"> 
+                        <a href="cerrar.php"> 
                             <span class="material-symbols-outlined">arrow_back</span>
                             Salir
                         </a>
@@ -52,7 +57,21 @@
 
         <div class="cont-padre">
             <div class="banner-name">
-                <h1>Buenas sr.XXX</h1>
+                <?php
+                    date_default_timezone_set('America/Caracas');
+                    $hora_actual = date("H");
+                ?>
+                <h1> 
+                    <?php 
+                        if($hora_actual < 12){
+                            echo "Buenos Dias, $usuario";
+                        } 
+                        else{
+                            echo "Buenas Tardes, $usuario";
+                        }
+                    ?>
+                </h1>
+
             </div>
 
             <div class="cont-info">
